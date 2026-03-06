@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dakota Carver — Business Owner</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav-logo magnetic-btn">DC</a>
+    <div class="nav-links">
+      <a href="#about" class="nav-link magnetic-btn">About</a>
+      <a href="#ecdysis" class="nav-link magnetic-btn">Ecdysis</a>
+      <a href="#soil" class="nav-link magnetic-btn">Soil Revival</a>
+      <a href="#carvr" class="nav-link magnetic-btn">CARVR</a>
+    </div>
+  </nav>
+
+  <!-- Section 1: Hero -->
+  <section class="section section-hero" id="hero" data-cursor-color="#ffffff">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="title-line"><span class="title-word reveal-text">Dakota</span></span>
+        <span class="title-line"><span class="title-word reveal-text">Carver</span></span>
+      </h1>
+      <p class="hero-tagline reveal-text">Business Owner</p>
+      <div class="hero-divider"></div>
+      <p class="hero-sub reveal-text">Entrepreneur &bull; Brand Builder &bull; Innovator</p>
+    </div>
+    <div class="scroll-indicator" id="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- Section 2: About Me -->
+  <section class="section section-about" id="about" data-cursor-color="#555555">
+    <div class="container">
+      <h2 class="section-heading">
+        <span class="heading-label">01</span>
+        <span class="heading-text reveal-text">About Me</span>
+      </h2>
+      <div class="about-intro reveal-up">
+        <p>I'm Dakota Carver — an entrepreneur building businesses across fashion, agriculture, and digital marketing. I believe in creating value through innovation, sustainability, and relentless execution.</p>
+      </div>
+      <div class="skills-section">
+        <h3 class="skills-title reveal-up">Skills & Tools</h3>
+        <div class="skills-grid">
+          <div class="skill-card reveal-up" data-delay="0">
+            <div class="skill-icon">&#9993;</div>
+            <h4>Email Marketing</h4>
+            <p>Klaviyo, Mailchimp, campaign strategy & automation</p>
+          </div>
+          <div class="skill-card reveal-up" data-delay="0.1">
+            <div class="skill-icon">&#9881;</div>
+            <h4>E-Commerce</h4>
+            <p>Shopify, product launches, conversion optimization</p>
+          </div>
+          <div class="skill-card reveal-up" data-delay="0.2">
+            <div class="skill-icon">&#127793;</div>
+            <h4>Soil Science</h4>
+            <p>Soil health analysis, regenerative practices, composting</p>
+          </div>
+          <div class="skill-card reveal-up" data-delay="0.3">
+            <div class="skill-icon">&#10024;</div>
+            <h4>Branding</h4>
+            <p>Brand identity, visual design, storytelling</p>
+          </div>
+          <div class="skill-card reveal-up" data-delay="0.4">
+            <div class="skill-icon">&#128083;</div>
+            <h4>Fashion Design</h4>
+            <p>Apparel design, streetwear, sustainable fashion</p>
+          </div>
+          <div class="skill-card reveal-up" data-delay="0.5">
+            <div class="skill-icon">&#128200;</div>
+            <h4>Digital Strategy</h4>
+            <p>Growth marketing, analytics, audience building</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Ecdysis Collective -->
+  <section class="section section-ecdysis" id="ecdysis" data-cursor-color="#00f0ff">
+    <div class="parallax-bg" id="ecdysis-parallax">
+      <div class="parallax-shape shape-1"></div>
+      <div class="parallax-shape shape-2"></div>
+      <div class="parallax-shape shape-3"></div>
+    </div>
+    <div class="container">
+      <h2 class="section-heading">
+        <span class="heading-label">02</span>
+        <span class="heading-text reveal-text">Ecdysis Collective</span>
+      </h2>
+      <div class="business-role reveal-up">Co-Founder</div>
+      <div class="business-content">
+        <div class="business-description reveal-up">
+          <p class="business-tagline">Redefining streetwear through bold design and conscious creation.</p>
+          <p>Ecdysis Collective is a clothing brand born from the idea of transformation — the word "ecdysis" refers to the shedding of an outer layer, a process of becoming something new. We create apparel that speaks to those who refuse to stay the same.</p>
+          <p>Every piece is designed with intention — merging street culture aesthetics with premium quality and a commitment to standing apart from the noise. Ecdysis isn't just clothing; it's an identity.</p>
+        </div>
+        <div class="business-highlights reveal-up">
+          <div class="highlight-item">
+            <span class="highlight-label">Focus</span>
+            <span class="highlight-value">Streetwear & Apparel</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-label">Philosophy</span>
+            <span class="highlight-value">Transformation Through Style</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-label">Audience</span>
+            <span class="highlight-value">Culture-Forward Creatives</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Soil Revival CO -->
+  <section class="section section-soil" id="soil" data-cursor-color="#4a7c28">
+    <div class="soil-particles" id="soil-particles"></div>
+    <div class="container">
+      <h2 class="section-heading">
+        <span class="heading-label">03</span>
+        <span class="heading-text reveal-text">Soil Revival CO</span>
+      </h2>
+      <div class="business-role reveal-up">Founder</div>
+      <div class="business-content">
+        <div class="business-description reveal-up">
+          <p class="business-tagline">Bringing life back to the ground beneath our feet.</p>
+          <p>Soil Revival CO is a soil rejuvenation business dedicated to restoring degraded land to its full potential. We work with homeowners, farms, and commercial properties to analyze soil health and implement regenerative solutions that create lasting change.</p>
+          <p>Using a combination of composting, biochar application, cover cropping guidance, and microbial inoculation, we rebuild the living ecosystem within your soil — improving water retention, nutrient density, and long-term productivity.</p>
+        </div>
+        <div class="business-highlights reveal-up">
+          <div class="highlight-item">
+            <span class="highlight-label">Focus</span>
+            <span class="highlight-value">Soil Health & Regeneration</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-label">Methods</span>
+            <span class="highlight-value">Composting, Biochar, Microbial Solutions</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-label">Clients</span>
+            <span class="highlight-value">Farms, Homeowners, Commercial Properties</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: CARVR Solutions -->
+  <section class="section section-carvr" id="carvr" data-cursor-color="#FF6B6B">
+    <div class="carvr-bg-shapes" id="carvr-shapes">
+      <div class="carvr-shape carvr-shape-1"></div>
+      <div class="carvr-shape carvr-shape-2"></div>
+      <div class="carvr-shape carvr-shape-3"></div>
+      <div class="carvr-shape carvr-shape-4"></div>
+    </div>
+    <div class="container">
+      <h2 class="section-heading">
+        <span class="heading-label">04</span>
+        <span class="heading-text reveal-text">CARVR Solutions</span>
+      </h2>
+      <div class="business-role reveal-up">Founder</div>
+      <div class="business-content">
+        <div class="business-description reveal-up">
+          <p class="business-tagline">Turning inboxes into revenue machines.</p>
+          <p>CARVR Solutions is an email marketing agency that helps brands build deeper relationships with their audience and drive measurable revenue through strategic email campaigns. From welcome sequences to abandoned cart flows, we craft every message to convert.</p>
+          <p>We specialize in e-commerce brands looking to maximize their owned channels. Our approach combines data-driven segmentation, compelling copywriting, and continuous A/B testing to deliver results that paid ads alone can't match.</p>
+        </div>
+        <div class="business-highlights reveal-up">
+          <div class="highlight-item">
+            <span class="highlight-label">Focus</span>
+            <span class="highlight-value">Email Marketing & Automation</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-label">Tools</span>
+            <span class="highlight-value">Klaviyo, Mailchimp, Custom Flows</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-label">Clients</span>
+            <span class="highlight-value">E-Commerce & DTC Brands</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <h2 class="footer-heading reveal-text">Let's Connect</h2>
+        <p class="footer-email reveal-up">hello@dakotacarver.com</p>
+        <div class="footer-socials reveal-up">
+          <a href="#" class="social-link magnetic-btn" aria-label="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+          </a>
+          <a href="#" class="social-link magnetic-btn" aria-label="Twitter">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l11.733 16h4.267l-11.733-16zM4 20l6.768-6.768M13.232 10.768L20 4"/></svg>
+          </a>
+          <a href="#" class="social-link magnetic-btn" aria-label="LinkedIn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Dakota Carver. All rights reserved.</p>
+        <a href="#hero" class="back-to-top magnetic-btn">Back to Top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
