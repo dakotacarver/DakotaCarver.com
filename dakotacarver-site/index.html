@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dakota Carver — Resume</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav-logo magnetic-btn">DC</a>
+    <div class="nav-links">
+      <a href="#about"     class="nav-link magnetic-btn">About</a>
+      <a href="#skills"    class="nav-link magnetic-btn">Skills</a>
+      <a href="#experience" class="nav-link magnetic-btn">Experience</a>
+      <a href="#ventures"  class="nav-link magnetic-btn">Ventures</a>
+      <a href="#education" class="nav-link magnetic-btn">Education</a>
+      <a href="#contact"   class="nav-link magnetic-btn">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section class="section section-hero" id="hero" data-cursor-color="#ffffff">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal-text">Available for Opportunities</div>
+      <h1 class="hero-title">
+        <span class="title-line"><span class="title-word">Dakota</span></span>
+        <span class="title-line"><span class="title-word">Carver</span></span>
+      </h1>
+      <p class="hero-tagline reveal-text">Sales &bull; Operations &bull; Entrepreneur</p>
+      <div class="hero-divider"></div>
+      <p class="hero-sub reveal-text">Loveland, CO &nbsp;|&nbsp; 720-440-4426 &nbsp;|&nbsp; dakotasenne12@gmail.com</p>
+      <div class="hero-cta-row reveal-text">
+        <a href="#experience" class="cta-btn magnetic-btn">View Experience</a>
+        <a href="#contact"    class="cta-btn cta-ghost magnetic-btn">Get In Touch</a>
+      </div>
+    </div>
+    <div class="scroll-indicator" id="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ══ ABOUT ══ -->
+  <section class="section section-about" id="about" data-cursor-color="#aaaaaa">
+    <div class="container">
+      <h2 class="section-heading">
+        <span class="heading-label">01</span>
+        <span class="heading-text reveal-text">About Me</span>
+      </h2>
+      <div class="about-grid">
+        <div class="about-bio reveal-up">
+          <p>I'm Dakota Carver — a self-driven, adaptable professional with roots in both people-facing roles and hands-on mechanical work. Whether I'm closing a deal, managing a team, or troubleshooting a piece of equipment, I bring the same energy: focused, positive, and built to get it done right.</p>
+          <p>My background spans sales, operations management, and mechanical work — giving me a well-rounded edge that's hard to find in one person. I've fixed machinery, trained employees, hit monthly sales goals, and built businesses from the ground up. I don't just show up — I contribute.</p>
+          <p>Driven by continuous growth and a genuine passion for learning. I strive to be better every day and to have a smile as I do it.</p>
+        </div>
+        <div class="contact-card reveal-up">
+          <div class="contact-item">
+            <span class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </span>
+            <a href="mailto:dakotasenne12@gmail.com">dakotasenne12@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.23h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.77A16 16 0 0 0 16 16.77l.85-.85a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <span>(720) 440-4426</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <span>Loveland, CO</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SKILLS ══ -->
+  <section class="section section-skills" id="skills" data-cursor-color="#5c6af7">
+    <div class="skills-bg-anim" id="skills-bg"></div>
+    <div class="container">
+      <h2 class="section-heading">
+        <span class="heading-label">02</span>
+        <span class="heading-text reveal-text">Skills</span>
+      </h2>
+
+      <div class="skill-categories">
+        <!-- Sales & Business -->
+        <div class="skill-category reveal-up" data-delay="0">
+          <div class="skill-category-icon">📈</div>
+          <h3>Sales &amp; Business</h3>
+          <div class="skill-tags">
+            <span class="tag">Cold Calling</span>
+            <span class="tag">Closing Sales</span>
+            <span class="tag">Account Management</span>
+            <span class="tag">Customer Retention</span>
+            <span class="tag">Cash Handling</span>
+            <span class="tag">Marketing</span>
+            <span class="tag">Upselling</span>
+          </div>
+        </div>
+
+        <!-- Customer & Leadership -->
+        <div class="skill-category reveal-up" data-delay="0.1">
+          <div class="skill-category-icon">🤝</div>
+          <h3>Customer &amp; Leadership</h3>
+          <div class="skill-tags">
+            <span class="tag">Client Relations</span>
+            <span class="tag">Conflict Resolution</span>
+            <span class="tag">Employee Training</span>
+            <span class="tag">Planning &amp; Scheduling</span>
+            <span class="tag">Team Player</span>
+            <span class="tag">Strong Communication</span>
+          </div>
+        </div>
+
+        <!-- Mechanical -->
+        <div class="skill-category reveal-up" data-delay="0.2">
+          <div class="skill-category-icon">🔧</div>
+          <h3>Mechanical &amp; Technical</h3>
+          <div class="skill-tags">
+            <span class="tag">Equipment Repairs</span>
+            <span class="tag">Preventive Maintenance</span>
+            <span class="tag">Power Tools</span>
+            <span class="tag">Hand Tools</span>
+            <span class="tag">Assembly Knowledge</span>
+            <span class="tag">Troubleshooting</span>
+            <span class="tag">Workplace Safety</span>
+          </div>
+        </div>
+
+        <!-- General -->
+        <div class="skill-category reveal-up" data-delay="0.3">
+          <div class="skill-category-icon">⚡</div>
+          <h3>General</h3>
+          <div class="skill-tags">
+            <span class="tag">Time Management</span>
+            <span class="tag">Inventory Management</span>
+            <span class="tag">Process Improvement</span>
+            <span class="tag">Safety Compliance</span>
+            <span class="tag">Physical Endurance</span>
+            <span class="tag">Attention to Detail</span>
+            <span class="tag">Adaptability</span>
+            <span class="tag">Reliability</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ EXPERIENCE ══ -->
+  <section class="section section-experience" id="experience" data-cursor-color="#888888">
+    <div class="container">
+      <h2 class="section-heading">
+        <span class="heading-label">03</span>
+        <span class="heading-text reveal-text">Experience</span>
+      </h2>
+
+      <div class="timeline">
+
+        <!-- Uhaul -->
+        <div class="timeline-item reveal-up" data-delay="0">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-company">U-Haul</h3>
+                <p class="timeline-role">Assistant Manager</p>
+              </div>
+              <span class="timeline-date">05/2023 — Present</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Assist in daily store operations and opening/closing procedures, ensuring the location runs efficiently from start to finish.</li>
+              <li>Support the general manager with scheduling, staffing, and workflow coordination across a team of multiple employees.</li>
+              <li>Provide customer service for rentals, returns, and reservations of trucks, trailers, and moving equipment.</li>
+              <li>Process payments, contracts, refunds, and rental agreements accurately — maintaining zero discrepancies.</li>
+              <li>Handle customer concerns and complaints with a solutions-first approach, consistently turning difficult situations into positive outcomes.</li>
+              <li>Perform light vehicle and equipment inspections, identifying issues before they escalate to maintain fleet readiness.</li>
+              <li>Maintain inventory of moving supplies and coordinate restocking to prevent shortages during peak periods.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Autosavvy -->
+        <div class="timeline-item reveal-up" data-delay="0.1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-company">Autosavvy Dealership</h3>
+                <p class="timeline-role">Sales</p>
+              </div>
+              <span class="timeline-date">11/2020 — 05/2023</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Helped customers find their perfect vehicle by guiding them through the full sales process from first contact to signing.</li>
+              <li>Pre-inspected vehicles and communicated directly with finance and mechanics to ensure a smooth and transparent transaction.</li>
+              <li>Consistently maintained an average of 20 cars sold per month through relationship building, follow-ups, and cold calling.</li>
+              <li>Built a personal client base through networking and referrals, driving repeat business and word-of-mouth leads.</li>
+              <li>Managed the full CRM pipeline — tracking leads, scheduling test drives, and following up with prospects.</li>
+              <li>Completed professional sales training with the Mark Cadone Academy, sharpening negotiation and closing techniques.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Breeze Thru -->
+        <div class="timeline-item reveal-up" data-delay="0.2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-company">Breeze Thru Car Wash</h3>
+                <p class="timeline-role">CSA / Mechanic</p>
+              </div>
+              <span class="timeline-date">05/2018 — 11/2020</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Assisted customers at pay stations, upselling memberships and packages while maintaining a fast-paced, friendly experience.</li>
+              <li>Performed hands-on repairs, daily greasing, and preventive maintenance on conveyor and wash machinery.</li>
+              <li>Diagnosed mechanical issues and escalated or resolved them to minimize equipment downtime.</li>
+              <li>Conducted routine safety inspections and daily cleaning protocols across all operational areas.</li>
+              <li>Followed proper incident reporting procedures and maintained compliance with safety standards at all times.</li>
+              <li>Collaborated with team leads to coordinate shift tasks and keep operations running on schedule during high-volume periods.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ VENTURES ══ -->
+  <section class="section section-ventures" id="ventures" data-cursor-color="#00f0ff">
+    <div class="parallax-bg" id="ecdysis-parallax">
+      <div class="parallax-shape shape-1"></div>
+      <div class="parallax-shape shape-2"></div>
+      <div class="parallax-shape shape-3"></div>
+    </div>
+    <div class="container">
+      <h2 class="section-heading">
+        <span class="heading-label">04</span>
+        <span class="heading-text reveal-text">Ventures</span>
+      </h2>
+
+      <div class="ventures-grid">
+
+        <!-- Ecdysis -->
+        <div class="venture-card reveal-up" data-delay="0" data-accent="#00f0ff">
+          <div class="venture-accent" style="background:#00f0ff"></div>
+          <div class="venture-badge">Co-Founder</div>
+          <h3>Ecdysis Collective</h3>
+          <p class="venture-url">ecdysiscollective.com</p>
+          <p>A streetwear brand born from the idea of transformation — merging street culture aesthetics with premium quality. Every piece is designed with intention for those who refuse to stay the same.</p>
+          <div class="venture-tags">
+            <span class="tag">Fashion</span><span class="tag">Branding</span><span class="tag">E-Commerce</span>
+          </div>
+        </div>
+
+        <!-- Soil Revival -->
+        <div class="venture-card reveal-up" data-delay="0.12" data-accent="#8fbc5a">
+          <div class="venture-accent" style="background:#8fbc5a"></div>
+          <div class="venture-badge" style="color:#8fbc5a; border-color:#8fbc5a44; background:#8fbc5a11">Founder</div>
+          <h3>Soil Revival CO</h3>
+          <p class="venture-url">Loveland, CO</p>
+          <p>A garden and soil health business focused on transforming residential backyards and commercial green spaces into thriving, healthy environments. We design, build, and revitalize gardens using nutrient-rich soil blends, composting, and organic amendments tailored to Colorado's climate.</p>
+          <div class="venture-tags">
+            <span class="tag">Home Gardens</span><span class="tag">Commercial Landscaping</span><span class="tag">Soil Health</span><span class="tag">Organic</span>
+          </div>
+        </div>
+
+        <!-- CARVR -->
+        <div class="venture-card reveal-up" data-delay="0.24" data-accent="#FF6B6B">
+          <div class="venture-accent" style="background:#FF6B6B"></div>
+          <div class="venture-badge" style="color:#FF6B6B; border-color:#FF6B6B44; background:#FF6B6B11">Founder &mdash; In Progress</div>
+          <h3>CARVR Marketing</h3>
+          <p class="venture-url">Email Marketing Agency</p>
+          <p>An email marketing agency turning inboxes into revenue machines. Specializing in e-commerce brands with data-driven segmentation, compelling copy, and automated flows that convert.</p>
+          <div class="venture-tags">
+            <span class="tag">Email Marketing</span><span class="tag">Automation</span><span class="tag">DTC</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ EDUCATION ══ -->
+  <section class="section section-education" id="education" data-cursor-color="#f7c75c">
+    <div class="edu-bg-shapes">
+      <div class="edu-shape edu-shape-1"></div>
+      <div class="edu-shape edu-shape-2"></div>
+    </div>
+    <div class="container">
+      <h2 class="section-heading">
+        <span class="heading-label">05</span>
+        <span class="heading-text reveal-text">Education &amp; Certifications</span>
+      </h2>
+
+      <div class="edu-grid">
+
+        <div class="edu-card reveal-up" data-delay="0">
+          <div class="edu-icon">⚡</div>
+          <div class="edu-info">
+            <h3>EPA 608 Type II Certification</h3>
+            <p class="edu-sub">ESCO Institute &nbsp;|&nbsp; Type I &amp; II in progress</p>
+            <span class="edu-tag">Certification</span>
+          </div>
+        </div>
+
+        <div class="edu-card reveal-up" data-delay="0.1">
+          <div class="edu-icon">📊</div>
+          <div class="edu-info">
+            <h3>Small Business Management</h3>
+            <p class="edu-sub">Aims &nbsp;|&nbsp; Online &nbsp;|&nbsp; June 2023</p>
+            <span class="edu-tag">Certification</span>
+          </div>
+        </div>
+
+        <div class="edu-card reveal-up" data-delay="0.2">
+          <div class="edu-icon">🎯</div>
+          <div class="edu-info">
+            <h3>Marketing Certification</h3>
+            <p class="edu-sub">Google &nbsp;|&nbsp; Online &nbsp;|&nbsp; January 2022</p>
+            <span class="edu-tag">Certification</span>
+          </div>
+        </div>
+
+        <div class="edu-card reveal-up" data-delay="0.3">
+          <div class="edu-icon">🚗</div>
+          <div class="edu-info">
+            <h3>Mark Cadone Sales Academy</h3>
+            <p class="edu-sub">Automotive Sales Training</p>
+            <span class="edu-tag">Training</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section class="section section-contact" id="contact" data-cursor-color="#FF6B6B">
+    <div class="carvr-bg-shapes" id="carvr-shapes">
+      <div class="carvr-shape carvr-shape-1"></div>
+      <div class="carvr-shape carvr-shape-2"></div>
+      <div class="carvr-shape carvr-shape-3"></div>
+      <div class="carvr-shape carvr-shape-4"></div>
+    </div>
+    <div class="container">
+      <h2 class="section-heading centered">
+        <span class="heading-label">06</span>
+        <span class="heading-text reveal-text">Let's Connect</span>
+      </h2>
+      <p class="contact-lead reveal-up">Open to new opportunities across sales, operations, marketing, and entrepreneurial partnerships — as well as industrial, mechanical, and equipment-related roles where hands-on skills and a strong work ethic make the difference.</p>
+      <div class="contact-links reveal-up">
+        <a href="mailto:dakotasenne12@gmail.com" class="contact-big-link magnetic-btn">
+          <span class="cbl-label">Email</span>
+          <span class="cbl-value">dakotasenne12@gmail.com</span>
+          <span class="cbl-arrow">→</span>
+        </a>
+        <a href="tel:7204404426" class="contact-big-link magnetic-btn">
+          <span class="cbl-label">Phone</span>
+          <span class="cbl-value">(720) 440-4426</span>
+          <span class="cbl-arrow">→</span>
+        </a>
+      </div>
+
+      <!-- References -->
+      <div class="references reveal-up">
+        <h3 class="ref-title">References</h3>
+        <div class="ref-grid">
+          <div class="ref-card">
+            <p class="ref-name">Angie Totten</p>
+            <p class="ref-role">Lead Sales — Autosavvy</p>
+            <a href="tel:7203400691">(720) 340-0691</a>
+          </div>
+          <div class="ref-card">
+            <p class="ref-name">Aiden Crossley</p>
+            <p class="ref-role">General Manager — U-Haul</p>
+            <a href="tel:7205256791">(720) 525-6791</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Dakota Carver. All rights reserved.</p>
+        <a href="#hero" class="back-to-top magnetic-btn">Back to Top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
